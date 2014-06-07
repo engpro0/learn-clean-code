@@ -20,7 +20,7 @@ int main(void)
         pyramidHeight = GetInt();
         leftMostBrick = pyramidHeight -1;               //set leftmost brick to next to rightmost brick         
 
-    } while (pyramidHeight < 0 || pyramidHeight > 23);  //ensure height is positive and less than 23
+    } while (pyramidHeight < 0 || pyramidHeight > 23);  //ensure height is positive and less than  or equal 23
     
     for (int level = 0; level < pyramidHeight; level++){
         for (int j = 0; j <= pyramidHeight; j++ ){      //fill bricks to the right and including the leftmost brick.
